@@ -1,0 +1,57 @@
+:root {
+    --color-white: #fff;
+    --cor-fundo: #181818;
+    --color-dark2: #00043c0d;
+    --color-dark3: #414141;
+    --color-dark4: #000000;
+    --color-dark5: #292929;
+    --color-purple: #15ff0094;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.img_logo_kabum_header{
+    height:min-content;
+}
+body{
+    font-family: arial;
+    background-color: var(--cor-fundo);
+    color: var(--color-white);
+}
+.img_logo_kabum_header{
+    	width: 105px;
+}
+.header,
+.navigation_header
+{   display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.header{
+    background-color: var(--color-dark2);
+    box-shadow: 1px 1px 10px var(--color-dark4);
+    height: 7em;
+    justify-content: space-between;
+    padding: 0 2%;
+}
+.navigation_header{
+    gap: 3em;
+
+}
+.navigation_header a{
+    font-size: 120%;
+    text-decoration: none;
+    color: var(--color-purple);
+    transition: 1s;
+    font-weight: bold;}
+
+.active{
+    transition: 1s;
+    padding: 10px;
+    border-radius: 10px;}
+
+.active:hover{
+    background-color: var(--color-dark3);
+    color: var(--color-white);
+}
